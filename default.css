@@ -7,6 +7,10 @@ body {
     margin: 0 auto;
 }
 
+a {
+    color: #102A43;
+}
+
 header { 
     background-color: #102A43;
     color: #BCCCDC;
