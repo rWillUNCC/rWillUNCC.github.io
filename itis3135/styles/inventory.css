@@ -1,0 +1,114 @@
+/* General Layout
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+span {
+    display: inline-block;
+}
+
+
+tr[class="read"] {
+    background-image: linear-gradient(to right, #e8f5e9, #FEFAE0);
+}
+
+tr[class="to-read"] {
+    background-image: linear-gradient(to right, #fff3e0, #FEFAE0);
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(to right, #e3f2fd, #FEFAE0);
+}
+
+/* Status span control */
+tr[class="read"] span[class="status"] {
+    border: 1px solid #2e7d32;
+    background-image: linear-gradient(#4caf50, #283618);
+    color: #FEFAE0;
+}
+
+tr[class="to-read"] span[class="status"] {
+    border: 1px solid #ef6c00;
+    background-image: linear-gradient(#ff9800, #c35801);
+    color: #FEFAE0;
+}
+
+tr[class="in-progress"] span[class="status"] {
+    border: 1px solid #1565c0;
+    background-image: linear-gradient(#2196f3, #145cad);
+    color: #FEFAE0;
+}
+
+/*status container */
+span[class="status"] {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+/*rate container */
+span[class^="rate"] {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 25px;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+/* Rating Dots*/
+span[class^="rate"] > span {
+    box-sizing: border-box;
+    justify-content: left;
+
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin: 2px;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+/* Logic for Rating Fill using Attribute Selectors */
+span[class*="one"] span:nth-child(1) {
+    background-image: linear-gradient(#ffeb3b, #fbc02d);
+}
+
+span[class*="two"] span:nth-child(-n+2) {
+    background-image: linear-gradient(#ffeb3b, #fbc02d);
+}
+
+span[class*="three"] span {
+    background-image: linear-gradient(#ffeb3b, #fbc02d);
+}

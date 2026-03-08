@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 200px;
+}
+
+#header {
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #798846;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    min-height: 75px;
+}
+
+#header-img {
+    padding-left: 25px;
+    height: 150px;
+    width: auto;
+}
+
+#nav-bar ul {
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 400px;
+    gap: 30px;
+}
+
+.nav-link {
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+
+main {
+    margin-top: 75px;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#lower-header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+h2 {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#email {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+}
+
+#submit {
+    background-color: #FFE75C;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+#features .spacing {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#shark-video {
+    display: flex;
+    justify-content: center;
+}
+
+#video {
+    width: 100%;
+    max-width: 560px;
+    height: 350px;
+}
+
+#invoice {
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    gap: 20px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+}
+
+.product .top {
+    background-color: #ddd;
+    padding: 15px;
+    font-weight: bold;
+}
+
+
+
+.product ol { list-style: none; 
+    margin: 15px; 
+}
+
+.product li { 
+    padding: 5px 0; 
+}
+
+.product .button { 
+    background-color: #FFE75C;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+    }
+    main { 
+        margin-top: 150px; 
+    }
+    #nav-bar {
+        margin-top: 10px;
+    }
+    #pricing { 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .product { 
+        width: 80%; max-width: 300px; 
+    }
+}

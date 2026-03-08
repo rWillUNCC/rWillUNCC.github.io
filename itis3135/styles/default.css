@@ -3,23 +3,22 @@ body {
     color: #283618;
     font-family: Tahoma, sans-serif;
     padding: 0;
-    max-width: 950px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-a {
-    color: #DDA15E;
+
+h1 {
+    font-family: "Baskerville", serif;
 }
 
 header { 
     background-color: #606C38;
     color: #FEFAE0;
     padding: 0.5em;
+
 }
 
-main {
-    padding: 0.5em;
-}
 
 footer{
     background-color: #606C38;
@@ -29,10 +28,26 @@ footer{
 
 nav a {
     color: #DDA15E;
-    padding: 0.5em;
+    display: inline-block;
+    text-indent: 0;
 }
 
-h1 {
-    font-family: "Baskerville", serif;
+header nav a, footer nav a {
+    color: #FFE75C;
 }
-   
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;  
+  flex-wrap: wrap;  
+  gap: 5px;
+}
+
+.nav-list li {
+  border-right: 2px solid #FEFAE0;
+  padding-right: 5px;
+}
+
+
+
