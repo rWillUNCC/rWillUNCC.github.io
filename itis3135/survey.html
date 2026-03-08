@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert C. “Robbie” Williams' | Remorseless Wobbegong | ITIS 3135 | Survey Form</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header> 
+        <div data-include="components/header.html" data-replace="%title%:Robert C. “Robbie” Williams' | Remorseless Wobbegong | ITIS 3135 | Survey Form"></div>
+    </header>
+    <main>
+        <h2>
+            Survey Form
+        </h2>
+        <form id="survey-form">
+
+            <label id="name-label" for="name">Name of Recpient:</label>
+            <input id="name" type="text" placeholder="Enter name" required>
+            <br><br>
+
+            <label id="email-label" for="email">Contact Email:</label>
+            <input id="email" type="email" placeholder="Enter email" required>
+            <br><br>
+
+            <label id="number-label" for="number">Number of Sharks:</label>
+            <input id="number" type="number" min="1" max="100" placeholder="Number of Sharks">
+            <br><br>
+
+            <label for="dropdown">Type of Shark:</label>
+            <select id="dropdown">
+            <option value="Wobbegong">Wobbegong</option>
+            <option value="Great White Shark">Great White Shark</option>
+            <option value="Tiger Shark">Tiger Shark</option>
+            <option value="Whale Shark">Whale Shark</option>
+            </select><br><br>
+
+            <p>Would you like live or dead sharks?</p>
+            <label><input name="user-live" value="yes" type="radio"> Yes</label>
+            <label><input name="user-live" value="no" type="radio"> No</label>
+            <br>
+            <p>Preferences:</p>
+            <label><input value="Deteathed" type="checkbox"> Deteathed</label>
+            <label><input value="Scaled" type="checkbox"> Scaled</label>
+            <br><br>
+
+            <label for="comments">Comments or Specifications:</label><br>
+            <textarea id="comments" placeholder="Your input..."></textarea>
+            <br><br>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
