@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        
+
+        /*Color pallet brought to you by Gemeni*/
+        :root {
+            --bg-color: #0b141a;
+            --surface-color: #16242d;
+            --accent-color: #f2a900; /* Tactical Orange */
+            --text-main: #e0e0e0;
+            --text-dim: #a0a0a0;
+            --highlight: #4db33d; /* Terminal Green */
+        }
+
+        body { /*Font and space brought to you by Gemeni*/
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /*Header and Navigation*/
+        /*Allingments and paddinge partially provided by Gemeni*/
+
+        header {
+            background-color: var(--surface-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        /*Navigation*/
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border: 1px solid transparent;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+        }
+
+        .divider {
+            color: var(--highlight);
+            padding: 0 5px;
+        }
+
+        section {
+            display: none; /* Hide all reccomended by gemeni */
+            padding: 3rem;
+            max-width: 1000px; /*normalized with rest of my sites style*/
+            margin: 0 auto;
+            animation: fadeIn 0.5s;
+        }
+
+        /* SPA Section Logic brought to you by Gemeni*/
+        #what:target, #who:target, #when:target, #where:target, #how:target, #why:target, #ai:target {
+            display: block;
+        }
+        section:last-of-type { 
+            display: none; 
+        }
+        #what { 
+            display: block; 
+        } 
+        :target ~ #what { 
+            display: none; 
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /*Element designs*/
+        /*Padding advice given by Gemeni*/
+        h2 {
+            border-left: 5px solid var(--highlight);
+            padding-left: 15px;
+            color: var(--highlight);
+        }
+
+        figure {
+            margin: 2rem 0;
+            background: var(--surface-color);
+            padding: 1rem;
+            border-radius: 4px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid var(--accent-color);
+        }
+
+        figcaption {
+            font-size: 0.9rem;
+            margin-top: 10px;
+            color: var(--accent-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            border: 1px solid var(--accent-color);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th { 
+            background-color: var(--surface-color); 
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--accent-color);
+            font-size: 0.8rem;
+        }
+
+        .val-btns a {
+            display: inline-block;
+            background: var(--surface-color);
+            border: 1px solid var(--accent-color);
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            margin: 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>WARGAME: RED DRAGON</h1>
+        <nav>
+            <a href="#what">What</a> <span class="divider">◈</span>
+            <a href="#who">Who</a> <span class="divider">◈</span>
+            <a href="#when">When</a> <span class="divider">◈</span>
+            <a href="#where">Where</a> <span class="divider">◈</span>
+            <a href="#how">How</a> <span class="divider">◈</span>
+            <a href="#why">Why</a> <span class="divider">◈</span>
+            <a href="#ai">AI Prompts</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="who">
+            <h2>The Commander</h2>
+            <p>I have been playing the Wargame series since 2020. I specialize in infantry focused decks and tactical positioning. I just about exclusively play tactical style multiplayer matches. I am an agressive commander who thrives in high-pressure situations. I utilize feints to great effect to entrap and eliminate all who oppose me. This game has brught me near 1500 hours of joy and has brought me through many challenging battles.</p>
+            
+            <figure>
+                <img src="/itis3135/hobby/images/statsScreen.png" alt="A screen showing a player's stats and win rates.">
+                <figcaption>Screencapture 2: My personal stats.</figcaption>
+            </figure>
+
+            <p>You too can take to the field and become a legendary commander! While the game is rather expensive offsale, it can be less that 10$ when on sale. There are many resources available to help you improve your skills and connect with other players. It is an educational experience that combines strategy and historical accuracy. Many units and equipment are accurately modeled based on real-world counterparts still in use.</p>
+        </section>
+
+        <section id="when">
+            <h2>Deployment Schedule</h2>
+            <p>While the game is active 24/7, peak tactical hours occur during European and North American evenings. Games can range between 20 minutes to 2 hours. The most popular game mode 10v10 tatical is typically 45 minutes long. No matter your time frame you can find a game to play.</p>
+            
+            <table> <!--basic table structure generated by Gemini -->
+                <thead>
+                    <tr>
+                        <th>Region</th>
+                        <th>Peak Time (EST)</th>
+                        <th>Average Players</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>EU Western</td>
+                        <td>2:00 PM - 6:00 PM</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>EU Eastern</td>
+                        <td>12:00 PM - 4:00 PM</td>
+                        <td>400</tr>
+                    <tr>
+                        <td>US East</td>
+                        <td>7:00 PM - 11:00 PM</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>US West</td>
+                        <td>9:00 PM - 1:00 AM</td>
+                        <td>150</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <figure>
+                <img src="/itis3135/hobby/images/timer.png" alt="A timer at 39 minutes 46 seconds.">
+                <figcaption>Screencapture 3: Once a game is underway there is no stopping.</figcaption>
+            </figure>
+        </section>
+
+        <section id="where">
+            <h2>The Theaters of War</h2>
+            <p>Maps range from the mountains of North Korea to the industrial zones of Scandinavia. The game is mostly set in real places on the Korean Peninsula. The most popular map, Wonsan Harbor, is based off the real harbor located at Wonsan. The variaty of maps is large offering different challenges.</p>
+            <p>Winning requires mastering different environments:</p>
+            <ul>
+                <li><strong>Urban:</strong> High infantry focus.</li>
+                <li><strong>Open Fields:</strong> Tank dominance.</li>
+                <li><strong>Forrest:</strong> Both tanks and infantry focus.</li>
+                <li><strong>Coastal:</strong> Combined naval and air ops.</li>
+            </ul>
+            <figure>
+                <img src="/itis3135/hobby/images/wonsanHarbor.png" alt="An ingame map of a coastline with a port.">
+                <figcaption>Screencapture 4: Strategic map of the Wonsan Harbor.</figcaption>
+            </figure>
+        </section>
+
+        <section id="how">
+            <h2>Logistics & Tactics</h2>
+            <p>To succeed, you must manage your unit. Without supply trucks, your multi-million dollar tanks are just paperweights. Without infantry your lines are nothing. Artillery support adds dignity to where there would otherwise be an ugly brawl. Tanks can roll over opposing fronts. Vehicles can burn out the enemy. Helicopters provide crucial reconnaissance and support. Planes rule the skies and hunt the ground.</p>
+            <ol>
+                <li>Build a balanced deck with Recon, Infantry, and Support.</li>
+                <li>Deploy your ground units.</li>
+                <li>Protect your command units and base.</li>
+                <li>Send your units to fight and win.</li>
+            </ol>
+            <figure>
+                <img src="/itis3135/hobby/images/fob.png" alt="A military outpost with chinese flags.">
+                <figcaption>Screencapture 5: The lifeline of the army, supply.</figcaption>
+            </figure>
+        </section>
+
+        <section id="why">
+            <h2>The Thrill of the Win</h2>
+            <p>There is no other game that captures the tactical feel of modern warfare quite like this. Every loss is a lesson, and every win feels earned. When you play against others you learn how people behave. You can come to learn what causes them to tick. You can use that to your advantage to win. You can use this insight to improve your strategy in game and real life.</p>
+            <blockquote>
+                <q>The supreme art of war is to subdue the enemy without fighting.</q>
+                <cite> - Sun Tzu</cite></blockquote>
+            <figure>
+                <img src="/itis3135/hobby/images/as90.png" alt="Two AS90 self-propelled howitzers firing.">
+                <figcaption>Screencapture 6: Artillery support in action.</figcaption>
+            </figure>
+        </section>
+
+        <section id="ai">
+            <h2>AI Methodology</h2>
+            <p>I utilized Gemini to generate the some of the structural HTML, main color scheme, the CSS logic for the single-page application functionality trough :target, and reccomendations and edits for spacing, final verfications. I used Github Copilot for intext filling. All images were captured by me from my gameplay.</p>
+            <ul>
+                <li><strong>Header names</strong> "Give me creative names for headers for who, what, when, where, how, why. This is for a hobby site for wargame red dragon."</li>        
+                <li><strong>HTML Prompt:</strong> "make me a table in html with the heads being Region, Peak Time, Player count"</li>
+                <li><strong>CSS Style Prompt:</strong> "I want a css root with variables for a general background color, a surface color for a header and some denoted background, accent color of tactical orange also used for the header text, main text color, a dim text color, and a highlighted color that is terminal green. follow Styling should follow CRAP principles. No Times New Roman, no generic blue underlined links, no plain white background, no plain black text.The style is for a hobby site based off the game wargame red dragon"</li>
+                <li><strong>SPA Logic:</strong> "Show me how to create a single page aplication usng :target with a fade in"</li>
+                <li><strong>CSS Style Prompt:</strong> "Given -Element designs- frame work can you provide some suggestions for sizing, spacing, and margins? for crap design" </li>
+                <li><strong>HTML Prompt:</strong> i want what to not display when others are clicked</li>
+                
+            </ul>
+            <figure>
+                <img src="/itis3135/hobby/images/L19.png" alt="A fighter jet flying upided down.">
+                <figcaption>Screencapture 7: Yugoslav L19 fighter jet.</figcaption>
+            </figure>
+        </section>
+
+        <section id="what">
+            <h2>The Ultimate Cold War RTS</h2>
+            <p>Wargame: Red Dragon is a real-time strategy game that simulates a massive conflict between NATO and Warsaw Pact forces. It features over 1,400 units across multiple nations. It takes place in a fictionalized version of what a second Korean War might have looked like. It offers an immersive experience with its real time tatical gameplay unquie to its genre.</p>
+            
+            <figure>
+                <img src="/itis3135/hobby/images/infcom.png" alt="A group of infantry soldiers standing around a command squad leader.">
+                <figcaption>Screencapture 1: Infantry command squad.</figcaption>
+            </figure>
+
+            <ul>
+                <li>Massive scale tactical combat.</li>
+                <li>In-depth deck building system.</li>
+                <li>Authentic 1975-1995 military hardware.</li>
+                <li>Active multiplayer community.</li>
+                <li>One of a kind culture.</li>
+            </ul>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="val-btns">
+            <a href="https://validator.w3.org/">HTML Validation</a>
+            <a href="https://jigsaw.w3.org/css-validator/">CSS Validation</a>
+            <a href="https://www.webaim.org/resources/wave/">Accessibility</a>
+        </div>
+        <p>Designed by <a href="/itis3135/design_firm.html" style="color:var(--accent-color)">Robert Williams Development Enterprise</a></p>
+    </footer>
+    <script src="/itis3135/scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
