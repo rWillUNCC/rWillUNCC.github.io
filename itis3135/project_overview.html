@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert C. “Robbie” Williams' | Remorseless Wobbegong | ITIS 3135 | Hivemind Entertainment | Project Overview</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+
+    <header>       
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+
+        <h2>Hivemind Entertainment | Project Overview</h2>
+
+
+        <section id="project-overview">
+            <h3>Project Overview</h3>
+            <p><strong>Application and Purpose:</strong> This website serves as the official digital hub for Hivemind Entertainment, a gaming studio specializing in Roblox development.</p>
+            <p><strong>Intended Users:</strong> Players, fellow developers, and potential industry partners.</p>
+            <p><strong>Content Overview:</strong> The site features a project portfolio and studio updates.</p>
+        </section>
+
+        <hr>
+
+        <section id="client-info">
+            <h3>Client Information</h3>
+            <ul>
+                <li><strong>Name:</strong> [private]</li>
+                <li><strong>Organization:</strong> Hivemind Entertainment</li>
+                <li><strong>Email:</strong> [private]</li>
+                <li><strong>Phone:</strong> [private]</li>
+            </ul>
+            <p>Contact me for contact info if neccessary.</p>
+        </section>
+
+        <hr>
+
+        <section id="wireframe">
+            <h3>Wireframe</h3>
+            <figure> 
+                <img src="images/wireframe.png" alt="Hivemind Entertainment Wireframe" style="max-width:100%; max-height: 500px;"> 
+                <figcaption>Figure 1: Website Wireframe created via Draw.io. <a href="https://drive.google.com/file/d/1QWKj1QYs0Wapo95fclninfJdVMQMvgU6/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Original Diagram</a></figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section id="site-map">
+            <h3>Site Map</h3>
+            <figure> 
+                <img src="images/sitemap.png" alt="Hivemind Entertainment Site Map" style="max-width:100%;"> 
+                <figcaption>Figure 2: Visual Site Map created via Draw.io. <a href="https://drive.google.com/file/d/1RMdCqBuxaXZ1KtSBbfgZPl6A_gsv5518/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View Original Diagram</a></figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section id="page-design">
+            <h3>Page Design Requirements</h3>
+            <p>Each page below utilizes a consistent header and a navigation bar for single-click access.</p>
+
+            <article>
+                <h4>1. Home Page (index.html)</h4>
+                <ul> 
+                    <li><strong>Purpose:</strong> To introduce Hivemind Entertainment and provide a look at current Roblox projects.</li>
+                    <li><strong>Audience:</strong> General public, players, and potential partners.</li>
+                    <li><strong>Content:</strong> Studio welcome statement, a latest release image slider section, page descriptions, and social media links.</li>
+                    <li><strong>Data Entry:</strong> No.</li>
+                    <li><strong>Validations:</strong> None.</li>
+                    <li><strong>Interactions:</strong> Navigation links, social media buttons, and image slider controls.</li>
+                    <li><strong>Actions:</strong> Clicking navigation links redirects to other pages; social media buttons open to external links; slider buttons cycle through game environment images.</li>
+                    <li><strong>Special Notes:</strong> None.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>2. Projects Gallery (projects.html)</h4>
+                <ul> 
+                    <li><strong>Purpose:</strong> A filterable catalog of all studio games.</li>
+                    <li><strong>Audience:</strong> Players looking for games and recruiters looking at the studio portfolio.</li>
+                    <li><strong>Content:</strong> High-quality thumbnails and game descriptions.</li>
+                    <li><strong>Data Entry:</strong> Yes, search bar and category filters.</li>
+                    <li><strong>Validations:</strong> Basic text length validation and character sanitization for the search input.</li>
+                    <li><strong>Interactions:</strong> Search text field, genre filter buttons (drop-down), and game links.</li>
+                    <li><strong>Actions:</strong> Typing in search or selecting a genre triggers an AJAX request to filter results dynamically without a page refresh; clicking a game link navigates to the external game location.</li>
+                    <li><strong>Special Notes:</strong> None.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>3. About Us (about.html)</h4>
+                <ul>
+                    <li><strong>Purpose:</strong> Share the studio's history and team background.</li>
+                    <li><strong>Audience:</strong> Potential partners and the community.</li>
+                    <li><strong>Content:</strong> Timeline of studio milestones, core values, and technical specifications.</li>
+                    <li><strong>Data Entry:</strong> No.</li>
+                    <li><strong>Validations:</strong> None.</li>
+                    <li><strong>Interactions:</strong> jQuery-UI Accordion headers and internal anchor links.</li>
+                    <li><strong>Actions:</strong> Clicking accordion headers expands or collapses sections to reveal detailed history or specification data.</li>
+                    <li><strong>Special Notes:</strong> None.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>4. Developer Blog (blog.html)</h4>
+                <ul> 
+                    <li><strong>Purpose:</strong> To provide updates on development progress and studio news.</li>
+                    <li><strong>Audience:</strong> Dedicated fans and community members.</li>
+                    <li><strong>Content:</strong> Chronological posts with text and embedded media.</li>
+                    <li><strong>Data Entry:</strong> Yes; Newsletter subscription form.</li>
+                    <li><strong>Validations:</strong> Email format validation to ensure a valid address is entered.</li>
+                    <li><strong>Interactions:</strong> Subscription text field, submit button, and a "Back to Top" button.</li>
+                    <li><strong>Actions:</strong> Clicking submit processes the email for the newsletter (simulated); clicking "Back to Top" scrolls the view to the header.</li>
+                    <li><strong>Special Notes:</strong> Uses embedded media for engagement.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>5. Contact Us (contact.html)</h4>
+                <ul> 
+                    <li><strong>Purpose:</strong> To provide a means for users to get in touch with the studio.</li>
+                    <li><strong>Audience:</strong> Potential clients, partners, and community members.</li>
+                    <li><strong>Content:</strong> Contact information, a message form, and a map showing the studio location (simulated).</li>
+                    <li><strong>Data Entry:</strong> Yes; a contact form for users to submit inquiries.</li>
+                    <li><strong>Validations:</strong> Required field checks for name and message; email format validation.</li>
+                    <li><strong>Interactions:</strong> Input fields, submit button, and an interactive embedded map.</li>
+                    <li><strong>Actions:</strong> Clicking submit validates and processes the form data, showing a success message; map allows panning and zooming.</li>
+                    <li><strong>Special Notes:</strong> None.</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+
+
+        <section id="dynamic-functionality">
+            <h3>Dynamic Functionality</h3>
+            
+            <ul>
+                <li><strong>Image Slider (Home Page - index.html):</strong>
+                <ul>
+                    <li><strong>Description:</strong> An interactive carousel that cycles through high-resolution screenshots of Roblox game environments.</li>
+                    <li><strong>Why:</strong> To capture user interest immediately upon landing and showcase visual quality without overwhelming the page with vertical content.</li>
+                    <li><strong>Example:</strong> <a href="https://store.steampowered.com/app/463530/Empires_of_the_Undergrowth/" target="_blank">Steam Games Store Image Carousel</a></li>
+                </ul></li>
+
+                <li><strong>AJAX Component (Projects Gallery - projects.html):</strong>
+                <ul>
+                    <li><strong>Description:</strong> A dynamic filtering system that updates the project grid based on category selection without a full page reload.</li>
+                    <li><strong>Why:</strong> Provides a seamless, "app-like" experience and reduces server load by only fetching necessary data fragments.</li>
+                    <li><strong>Example:</strong> <a href="https://store.steampowered.com/search/" target="_blank">Steam Search Filtering</a></li>
+                </ul></li>
+
+                <li><strong>jQuery-UI Component (About Us - about.html):</strong>
+                <ul>
+                    <li><strong>Description:</strong> An accordion layout to organize studio history and hardware specifications into collapsible headers.</li>
+                    <li><strong>Why:</strong> Helps users navigate dense technical information quickly by allowing them to expand only what is relevant to them.</li>
+                    <li><strong>Example:</strong> <a href="https://jqueryui.com/accordion/" target="_blank">Official jQuery-UI Accordion Demo</a></li>
+                </ul></li>
+
+                <li><strong>Scroll-to-Top (Developer Blog - blog.html):</strong>
+                <ul>
+                    <li><strong>Description:</strong> A functional navigation aid that appears as users scroll down the page, enabling a smooth transition back to the top.</li>
+                    <li><strong>Why:</strong> Significantly improves the user experience for long-form content by reducing the effort needed to access the main menu or header.</li>
+                    <li><strong>Example:</strong> <a href="https://www.w3schools.com/howto/howto_js_scroll_to_top.asp" target="_blank">W3Schools Scroll to Top Button</a></li>
+                </ul></li>
+
+                <li><strong>Form Validation (Contact Us - contact.html):</strong>
+                <ul>
+                    <li><strong>Description:</strong> Real-time JavaScript validation to ensure email formats are correct and required fields are populated before submission.</li>
+                    <li><strong>Why:</strong> Improves data integrity and prevents user frustration by providing immediate feedback on input errors.</li>
+                    <li><strong>Example:</strong> <a href="https://www.w3schools.com/js/js_validation.asp" target="_blank">W3Schools JavaScript Validation</a></li>
+                </ul></li>
+
+            
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
