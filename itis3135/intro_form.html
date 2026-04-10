@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction Form</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header> 
+        <div data-include="components/header.html" data-replace="%title%:Introduction Form"></div>
+    </header>
+    <main>
+        <h2>Introduction Form</h2>
+        <h3>Please submit the form below.</h3>
+
+        <form id="intro-form">
+            
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" value="Robert" placeholder="Enter first name" required>
+            <br><br>
+
+            <label for="middleName">Middle Name/Initial:</label>
+            <input type="text" id="middleName" name="middleName" value="C." placeholder="Enter middle name (optional)">
+            <br><br>
+
+            <label for="nickname">Nickname/Preferred Name:</label>
+            <input type="text" id="nickname" name="nickname" value="Robbie" placeholder="Enter nickname (optional)">
+            <br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" value="Williams" placeholder="Enter last name" required>
+            <br><br>
+
+            
+            <label for="ackStatement">Acknowledgment Statement:</label>
+            <input type="text" id="ackStatement" name="ackStatement" value="I, Robert C. Williams agree to abide by the terms of the course contract in my Spring 2026, ITIS-3135, Front-End Web App Development with my instructor, Professor D.I. von Briesen." placeholder="Enter statement" required>
+            <br><br>
+
+            <label for="ackDate">Acknowledgement Date:</label>
+            <input type="date" id="ackDate" name="ackDate" value="2026-01-25" required>
+            <br><br>
+
+            
+            <label for="mascotAdj">Mascot Adjective:</label>
+            <input type="text" id="mascotAdj" name="mascotAdj" value="Remorseless" placeholder="Enter adjective" required>
+            <br><br>
+
+            <label for="mascotAnimal">Mascot Animal:</label>
+            <input type="text" id="mascotAnimal" name="mascotAnimal" value="Wobbegong" placeholder="Enter animal" required>
+            <br><br>
+
+            
+            <label for="divider">Divider:</label>
+            <input type="text" id="divider" name="divider" value="|" placeholder="Enter divider (e.g. ~, |, ♥️)">
+            <br><br>
+
+            <label for="userImage">Picture:</label>
+            <input type="file" id="userImage" name="userImage" accept="image/*">
+            <p>Default image: <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Spotted_wobbegong.jpg" alt="Default Wobbegong" width="100"></p>
+            <br>
+
+            <label for="picCaption">Picture Caption:</label>
+            <input type="text" id="picCaption" name="picCaption" value="A spotted wobbegong shark." placeholder="Enter caption" required>
+            <br><br>
+
+            
+            <label for="personalStatement">Personal Statement:</label><br>
+            <textarea id="personalStatement" name="personalStatement" placeholder="Enter personal statement" required>I am a student at UNCC studying Front-End Web App Development.</textarea>
+            <br><br>
+
+            
+            <fieldset>
+                <legend>7 Main Bullets</legend>
+                <label for="bullet1">Personal Background:</label>
+                <input type="text" id="bullet1" name="bullet1" value="Born and raised in North Carolina." placeholder="Enter background">
+                <br>
+                <label for="bullet2">Professional Background:</label>
+                <input type="text" id="bullet2" name="bullet2" value="Lead developer at Hivemind Entertainment." placeholder="Enter professional background">
+                <br>
+                <label for="bullet3">Academic Background:</label>
+                <input type="text" id="bullet3" name="bullet3" value="Senior at UNCC." placeholder="Enter academic background">
+                <br>
+                <label for="bullet4">Background in Subject:</label>
+                <input type="text" id="bullet4" name="bullet4" value="Experience with Lua and basic HTML." placeholder="Enter subject background">
+                <br>
+                <label for="bullet5">Primary Computer Platform:</label>
+                <input type="text" id="bullet5" name="bullet5" value="Windows PC." placeholder="Enter platform">
+                <br>
+                <label for="bullet6">Funny Thing:</label>
+                <input type="text" id="bullet6" name="bullet6" value="I enjoy tactical RTS games for over 1500 hours." placeholder="Enter funny thing (optional)">
+                <br>
+                <label for="bullet7">Anything Else:</label>
+                <input type="text" id="bullet7" name="bullet7" value="I love marine biology, especially sharks." placeholder="Enter anything else (optional)">
+            </fieldset>
+            <br>
+
+            
+            <fieldset>
+                <legend>Course Details</legend>
+                <div id="course-container">
+                    
+                </div>
+                <button type="button" id="add-course-btn">Add Course</button>
+            </fieldset>
+            <br>
+
+            <label for="quote">Quote:</label>
+            <input type="text" id="quote" name="quote" value="The supreme art of war is to subdue the enemy without fighting." placeholder="Enter quote" required>
+            <br><br>
+
+            <label for="quoteAuthor">Quote Author:</label>
+            <input type="text" id="quoteAuthor" name="quoteAuthor" value="Sun Tzu" placeholder="Enter author" required>
+            <br><br>
+
+            <label for="funnyThing">Funny Thing:</label>
+            <input type="text" id="funnyThing" name="funnyThing" value="I find sharks to be the perfect design." placeholder="Funny thing (optional)">
+            <br><br>
+
+            <label for="share">Something I would like to share:</label>
+            <input type="text" id="share" name="share" value="I am helping a gaming studio called Hivemind Entertainment." placeholder="Share something (optional)">
+            <br><br>
+
+            
+            <fieldset>
+                <legend>5 Links</legend>
+                <input type="url" name="link1" value="https://webpages.charlotte.edu/rwill262" placeholder="CLT Web">
+                <br>
+                <input type="url" name="link2" value="https://rwilluncc.github.io" placeholder="GitHub.io">
+                <br>
+                <input type="url" name="link3" value="https://github.com/rWillUNCC" placeholder="GitHub">
+                <br>
+                <input type="url" name="link4" value="https://www.freecodecamp.org/rcw_wobbegong" placeholder="freeCodeCamp">
+                <br>
+                <input type="url" name="link5" value="https://linkedin.com/in/robert-williams-07b454388" placeholder="LinkedIn">
+            </fieldset>
+            <br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="button">Clear</button>
+        </form>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/introduction.js"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
