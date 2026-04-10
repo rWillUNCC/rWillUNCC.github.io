@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("intro-form");
     const courseContainer = document.getElementById("course-container");
     const addCourseBtn = document.getElementById("add-course-btn");
-    const clearBtn = document.querySelector("button[type='button']");
+    const clearBtn = document.getElementById("clear-btn");
 
     //Function to add new course text boxes with delete buttons
     function addCourseField() {
@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <img src="${imageUrl}" alt="User Image" style="max-width: 300px;">
                 <figcaption>${formData.get("picCaption")}</figcaption>
             </figure>
+            <p><strong>Acknowledgment:</strong> ${formData.get("ackStatement")} on ${formData.get("ackDate")}</p>
             <p><strong>Mascot:</strong> ${mascotAdj} ${mascotAnimal}</p>
             <p><strong>Personal Statement:</strong> ${personalStatement}</p>
             <h4>Background Details</h4>
@@ -106,6 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <h4>Courses Currently Taking:</h4>
             <ul>${courseItems}</ul>
             <p><strong>Quote:</strong> "${quote}" - <em>${quoteAuthor}</em></p>
+            <p><strong>Funny Thing:</strong> ${formData.get("funnyThing")}</p>
+            <p><strong>Something I'd like to share:</strong> ${formData.get("share")}</p>
             <h4>Links</h4>
             <ul>${linkItems}</ul>
             <hr>

@@ -39,7 +39,7 @@
             <br><br>
 
             <label for="ackDate">Acknowledgement Date:</label>
-            <input type="date" id="ackDate" name="ackDate" value="2026-01-25" required>
+            <input type="text" id="ackDate" name="ackDate" value="2026-01-25" required>
             <br><br>
 
             
@@ -139,7 +139,9 @@
 
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
-            <button type="button">Clear</button>
+            <button type="button" id="clear-btn">Clear</button>
+            <button type="button" id="json-btn">Generate JSON</button>
+            <button type="button" id="generate-html-btn">Generate HTML</button>
         </form>
     </main>
 
@@ -147,6 +149,8 @@
         <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/introduction.js"></script>
+    <script src="scripts/generate_html.js"></script>
+    <script src="scripts/generate_json.js"></script>
     <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
