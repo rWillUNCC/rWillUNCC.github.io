@@ -1,0 +1,72 @@
+<!-- Projects Page - Filler content provided by Gemini-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hivemind Entertainment - Projects Gallery</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div data-include="./components/header.html"></div>
+
+    <main>
+        <h2>Our Projects Gallery</h2>
+        <p>Explore our collection of Roblox games and experiences. Use the filters and search below to find what interests you.</p>
+
+        <section class="search-container">
+            <input type="text" id="project-search" class="search-input" placeholder="Search projects by name or description...">
+        </section>
+
+        <section class="filter-section">
+            <span class="filter-label">Filter by Genre:</span>
+            <div class="filter-buttons">
+                <button class="filter-button active" data-filter="all">All Games</button>
+                <button class="filter-button" data-filter="combat">Combat</button>
+                <button class="filter-button" data-filter="puzzle">Puzzle</button>
+                <button class="filter-button" data-filter="shooter">Shooter</button>
+            </div>
+        </section>
+
+        <section class="projects-grid">
+            <article class="project-card" data-genre="combat" data-title="Better Sea" data-description="A thrilling platformer where players ascend through floating islands">
+                <img src="./images/project1.png" alt="Better Sea" class="project-image">
+                <div class="project-content">
+                    <h4 class="project-title">Better Sea</h4>
+                    <span class="project-genre">Combat</span>
+                    <p class="project-description">A thrilling dueling game where players fight to choose the better SEA Military member.</p>
+                    <a href="https://www.roblox.com" target="_blank" class="project-link">Play Now</a>
+                </div>
+            </article>
+
+            <article class="project-card" data-genre="puzzle" data-title="Example 1" data-description="A mind-bending puzzle game">
+                <img src="./images/project2.jpg" alt="Example 1" class="project-image">
+                <div class="project-content">
+                    <h4 class="project-title">Example 1</h4>
+                    <span class="project-genre">Puzzle</span>
+                    <p class="project-description">A mind-bending puzzle game .</p>
+                    <a href="https://www.roblox.com" target="_blank" class="project-link">Play Now</a>
+                </div>
+            </article>
+
+            <article class="project-card" data-genre="shooter" data-title="Example 2" data-description="An action-packed shooter with colorful visuals">
+                <img src="./images/project3.jpg" alt="Example 2" class="project-image">
+                <div class="project-content">
+                    <h4 class="project-title">Example 2</h4>
+                    <span class="project-genre">Shooter</span>
+                    <p class="project-description">An action-packed shooter with vibrant, colorful visuals.</p>
+                    <a href="https://www.roblox.com/games/78894556816401/Better-SEA" target="_blank" class="project-link">Play Now</a>
+                </div>
+            </article>
+        </section>
+            
+    </main>
+
+    <button id="scroll-to-top">↑</button>
+
+    <div data-include="./components/footer.html"></div>
+
+    <script src="./scripts/include-html.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

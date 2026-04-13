@@ -1,0 +1,163 @@
+<!-- Contact Us Page - Filler content provided by Gemini-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hivemind Entertainment - Contact Us</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div data-include="./components/header.html"></div>
+
+    <main>
+        <h2>Contact Us</h2>
+        <p>Have a question, partnership inquiry, or player feedback? We'd love to hear from you! Fill out the form below or reach out through one of our social channels.</p>
+
+        <section class="contact-grid">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                
+                <article class="contact-block">
+                    <h4>📍 Location</h4>
+                    <p>Hivemind Entertainment<br>
+                    Gaming Park<br>
+                    Out East, NC 12345</p>
+                </article>
+
+                <article class="contact-block">
+                    <h4>📧 Email Examples</h4>
+                    <ul class="contact-list">
+                        <li><strong>General Inquiries:</strong> <a href="mailto:info@hivemind.com" class="accent-link">info@hivemind.com</a></li>
+                        <li><strong>Partnership:</strong> <a href="mailto:partnerships@hivemind.com" class="accent-link">partnerships@hivemind.com</a></li>
+                        <li><strong>Support:</strong> <a href="mailto:support@hivemind.com" class="accent-link">support@hivemind.com</a></li>
+                    </ul>
+                </article>
+
+                <article class="contact-block">
+                    <h4>💬 Social Media</h4>
+                    <ul class="contact-list">
+                        <li><a href="https://discord.com" target="_blank" class="accent-link">🎮 Discord Community</a></li>
+                        <li><a href="https://twitter.com" target="_blank" class="accent-link">🐦 Twitter/X</a></li>
+                        <li><a href="https://youtube.com" target="_blank" class="accent-link">📺 YouTube</a></li>
+                        <li><a href="https://www.roblox.com/communities/4766552/Hivemind-Entertainment#!/about" target="_blank" class="accent-link">🎯 Roblox Group</a></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h4>⏰ Response Time</h4>
+                    <p>We strive to respond to all inquiries within 24-48 hours during business days. For urgent matters, please reach out on Discord.</p>
+                </article>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                
+                <div class="success-message">
+                    ✓ Thank you for your message! We'll get back to you soon.
+                </div>
+
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="contact-name" class="form-label">Full Name *</label>
+                        <input type="text" id="contact-name" class="form-input" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email" class="form-label">Email Address *</label>
+                        <input type="email" id="contact-email" class="form-input" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-subject" class="form-label">Subject</label>
+                        <input type="text" id="contact-subject" class="form-input" placeholder="What is this regarding?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-category" class="form-label">Inquiry Type</label>
+                        <select id="contact-category" class="form-input custom-select">
+                            <option value="">-- Select an option --</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="support">Player Support</option>
+                            <option value="bug">Report a Bug</option>
+                            <option value="feedback">Game Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message" class="form-label">Message *</label>
+                        <textarea id="contact-message" class="form-textarea" placeholder="Tell us more about your inquiry..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="form-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Frequently Asked Questions</h3>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>How can I report a bug in your games?</span>
+                    <span class="accordion-toggle">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Please report bugs through our Discord server in the #bug-reports channel, or email us at support@hivemind.com. Include as much detail as possible about the issue, including screenshots or videos if available.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Are you accepting new game ideas or collaboration proposals?</span>
+                    <span class="accordion-toggle">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Yes! We're always interested in hearing about collaboration opportunities and partnership ideas. Please reach out to partnerships@hivemind.com with a detailed proposal and we'll get back to you.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>How often do you release game updates?</span>
+                    <span class="accordion-toggle">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Update frequency varies by game, but we generally release significant content updates quarterly, with smaller patches and bug fixes monthly. Major seasonal events are typically released 3-4 times per year.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Are you hiring developers or artists?</span>
+                    <span class="accordion-toggle">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>We're frequently looking for talented individuals! Check our Discord or send your portfolio to careers@hivemind.com. We're always interested in hearing from passionate developers, artists, and designers.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>How do I get help if I'm stuck in one of your games?</span>
+                    <span class="accordion-toggle">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Our Discord community is very helpful! Post your question in the game's support channel. You can also check our YouTube channel for tutorial videos, or email support@hivemind.com for technical issues.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button id="scroll-to-top">↑</button>
+
+    <div data-include="./components/footer.html"></div>
+
+    <script src="./scripts/include-html.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
