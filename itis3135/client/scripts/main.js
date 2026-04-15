@@ -34,7 +34,7 @@ class ImageSlider {
 
     // Updates the active class on slides and manages the indicator text
     showSlide(n) {
-        this.slides.forEach(slide => slide.classList.remove('active'));
+        this.slides.forEach((slide) => slide.classList.remove('active'));
         
         if (n >= this.slides.length) {
             this.currentSlide = 0;
@@ -76,7 +76,7 @@ class ProjectFilter {
 
     // Binds input and click events for filtering logic
     initialize() {
-        this.filterButtons.forEach(button => {
+        this.filterButtons.forEach((button) => {
             button.addEventListener('click', () => this.handleFilter(button));
         });
 
@@ -88,13 +88,13 @@ class ProjectFilter {
     // Toggles visibility of cards based on the selected genre button
     handleFilter(button) {
         // Update active state
-        this.filterButtons.forEach(btn => btn.classList.remove('active'));
+        this.filterButtons.forEach((btn) => btn.classList.remove('active'));
         button.classList.add('active');
 
         const filterValue = button.getAttribute('data-filter').toLowerCase();
 
         // Filter projects
-        this.projectCards.forEach(card => {
+        this.projectCards.forEach((card) => {
             const genre = card.getAttribute('data-genre').toLowerCase();
             
             if (filterValue === 'all' || genre === filterValue) {
@@ -110,7 +110,7 @@ class ProjectFilter {
     handleSearch() {
         const searchTerm = this.searchInput.value.toLowerCase();
 
-        this.projectCards.forEach(card => {
+        this.projectCards.forEach((card) => {
             const title = card.getAttribute('data-title').toLowerCase();
             const description = card.getAttribute('data-description').toLowerCase();
 
@@ -147,7 +147,7 @@ class Accordion {
 
     // Binds click handlers to accordion headers
     initialize() {
-        this.headers.forEach(header => {
+        this.headers.forEach((header) => {
             header.addEventListener('click', () => this.toggleAccordion(header));
         });
     }
@@ -157,7 +157,7 @@ class Accordion {
         const content = header.nextElementSibling;
 
         // Close all other accordions
-        this.headers.forEach(h => {
+        this.headers.forEach((h) => {
             if (h !== header) {
                 h.classList.remove('active');
                 if (h.nextElementSibling) {
@@ -237,7 +237,7 @@ class FormValidator {
         let isValid = true;
 
         // Clear previous errors
-        document.querySelectorAll('.error-message').forEach(msg => msg.remove());
+        document.querySelectorAll('.error-message').forEach((msg) => msg.remove());
 
         if (!name) {
             this.showError('contact-name', 'Name is required');
