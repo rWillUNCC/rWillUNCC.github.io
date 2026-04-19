@@ -7,7 +7,6 @@ body {
     margin: 0 auto;
 }
 
-
 h1 {
     font-family: "Baskerville", serif;
 }
@@ -49,5 +48,20 @@ header nav a, footer nav a {
   padding-right: 5px;
 }
 
+main a {
+    color: #606C38;
+    text-decoration: none;
+}
 
+main a:visited {
+    color: #283618;
+    text-decoration: none;
+}
+
+.review-img{
+    max-width: 550px;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
 
