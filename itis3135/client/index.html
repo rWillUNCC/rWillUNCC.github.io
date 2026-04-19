@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hivemind Entertainment - Home</title>
+    <title>Hivemind Entertainment - Welcome</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    <div data-include="./components/header.html"></div>
+    <header>
+        <div data-include="./components/header.html"></div>
+    </header>
 
     <main>
-        <section class="hero">
-            <h2>Welcome to Hivemind Entertainment</h2>
-            <p>A gaming studio dedicated to creating Roblox experiences and providing ethical digital entertainment.</p>
-        </section>
+        <h2>Welcome</h2>
+        <p>Hivemind Entertainment, gaming studio dedicated to creating Roblox experiences and providing ethical digital entertainment.</p>
+        
 
         <section class="featured-projects">
             <h3>Featured Projects</h3>
@@ -38,7 +39,7 @@
         <hr>
 
         <section>
-            <h3>About Hivemind Entertainment</h3>
+            <h3>About Us</h3>
             <p>We are a passionate team of developers, artists, and designers committed to creating memorable gaming experiences. Founded in 2019, we've grown from a small indie studio to a dynamic team working on multiple Roblox projects simultaneously.</p>
             
             <h4>What We Do</h4>
@@ -84,11 +85,14 @@
         </section>
     </main>
 
+    <footer>
     <button id="scroll-to-top">↑</button>
 
     <div data-include="./components/footer.html"></div>
-
     <script src="./scripts/include-html.js"></script>
     <script src="./scripts/main.js"></script>
+    </footer>
+
+    
 </body>
 </html>
