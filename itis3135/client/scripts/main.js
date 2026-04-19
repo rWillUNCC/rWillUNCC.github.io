@@ -32,9 +32,9 @@ class ImageSlider {
         setInterval(() => this.nextSlide(), 5000);
     }
 
-    // Updates the active class on slides and manages the indicator text
+    // Updates the visible slide and manages the indicator text
     showSlide(n) {
-        this.slides.forEach((slide) => slide.classList.remove('active'));
+        this.slides.forEach((slide) => slide.classList.remove('slider-image-visible'));
         
         if (n >= this.slides.length) {
             this.currentSlide = 0;
@@ -43,7 +43,7 @@ class ImageSlider {
             this.currentSlide = this.slides.length - 1;
         }
 
-        this.slides[this.currentSlide].classList.add('active');
+        this.slides[this.currentSlide].classList.add('slider-image-visible');
         if (this.indicator) {
             this.indicator.textContent = `${this.currentSlide + 1} / ${this.slides.length}`;
         }
@@ -87,9 +87,9 @@ class ProjectFilter {
 
     // Toggles visibility of cards based on the selected genre button
     handleFilter(button) {
-        // Update active state
-        this.filterButtons.forEach((btn) => btn.classList.remove('active'));
-        button.classList.add('active');
+        // Update selected state
+        this.filterButtons.forEach((btn) => btn.classList.remove('filter-button-selected'));
+        button.classList.add('filter-button-selected');
 
         const filterValue = button.getAttribute('data-filter').toLowerCase();
 
@@ -159,16 +159,16 @@ class Accordion {
         // Close all other accordions
         this.headers.forEach((h) => {
             if (h !== header) {
-                h.classList.remove('active');
+                h.classList.remove('accordion-header-open');
                 if (h.nextElementSibling) {
-                    h.nextElementSibling.classList.remove('active');
+                    h.nextElementSibling.classList.remove('accordion-content-open');
                 }
             }
         });
 
         // Toggle current accordion
-        header.classList.toggle('active');
-        content.classList.toggle('active');
+        header.classList.toggle('accordion-header-open');
+        content.classList.toggle('accordion-content-open');
     }
 }
 
@@ -209,8 +209,8 @@ class FormValidator {
         if (this.validateContactForm(name, email, message)) {
             const successMsg = document.querySelector('.success-message');
             if (successMsg) {
-                successMsg.classList.add('show');
-                setTimeout(() => successMsg.classList.remove('show'), 3000);
+                successMsg.classList.add('success-message-open');
+                setTimeout(() => successMsg.classList.remove('success-message-open'), 3000);
             }
             this.form.reset();
         }
@@ -225,8 +225,8 @@ class FormValidator {
         if (this.validateEmail(email)) {
             const successMsg = this.newsletterForm.parentElement.querySelector('.success-message');
             if (successMsg) {
-                successMsg.classList.add('show');
-                setTimeout(() => successMsg.classList.remove('show'), 3000);
+                successMsg.classList.add('success-message-open');
+                setTimeout(() => successMsg.classList.remove('success-message-open'), 3000);
             }
             this.newsletterForm.reset();
         }
@@ -294,9 +294,9 @@ class ScrollToTop {
     // Shows the button only after scrolling past a threshold
     handleScroll() {
         if (window.pageYOffset > 300) {
-            this.button.classList.add('show');
+            this.button.classList.add('scroll-top-visible');
         } else {
-            this.button.classList.remove('show');
+            this.button.classList.remove('scroll-top-visible');
         }
     }
 
