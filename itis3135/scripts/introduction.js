@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Image handling
         const userImageFile = document.getElementById("userImage").files[0];
-        const imageUrl = userImageFile ? URL.createObjectURL(userImageFile) : "itis3135/images/Screenshot-2026-01-17-173009.png";
+        const imageUrl = userImageFile ? URL.createObjectURL(userImageFile) : "./itis3135/images/Screenshot-2026-01-17-173009.png";
 
         const summaryHtml = `
             <h2>Introduction Summary</h2>
