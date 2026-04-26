@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert C. “Robbie” Williams' | Remorseless Wobbegong | ITIS 3135 | Weather App</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/weather.css">
+</head>
+<body>
+    <header> 
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>
+            Weather App
+        </h2>
+
+
+    <select id="city-select">
+      <option value="">blank</option>
+      <option value="new york">New York</option>
+      <option value="los angeles">Los Angeles</option>
+      <option value="chicago">Chicago</option>
+      <option value="paris">Paris</option>
+      <option value="tokyo">Tokyo</option>
+      <option value="london">London</option>
+    </select>
+
+    <button id="get-weather-btn">Get Weather Btn</button>
+
+    <div id="weather-display">
+      <img id="weather-icon" src="blank" alt="weather icon">
+      <p id="main-temperature"></p>
+      <p id="feels-like"></p>
+      <p id="humidity"></p>
+      <p id="wind"></p>
+      <p id="wind-gust"></p>
+      <p id="weather-main"></p>
+      <p id="location"></p>
+    </div>
+
+
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
