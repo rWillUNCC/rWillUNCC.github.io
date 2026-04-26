@@ -1,0 +1,50 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#drum-machine {
+  padding: 40px;
+  border-radius: 15px;
+}
+
+#display {
+  height: 50px;
+  background: #000;
+  color: #FEFAE0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+#pad-bank {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.drum-pad {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  border: none;
+  color: #FEFAE0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.drum-pad:hover {
+  background: #2a2a2a;
+}
+
+
+.drum-pad.active, .drum-pad:active {
+  transform: translateY(3px);
+  background: #262828;
+  color: #000;
+}
