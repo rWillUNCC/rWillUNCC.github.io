@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert C. “Robbie” Williams' | Remorseless Wobbegong | ITIS 3135 | Voting system</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/voting.css">
+</head>
+<body>
+    <header> 
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Voting System</h2>
+
+        <section id="admin-section" class="voting-container">
+            <h3>Create Poll Options</h3>
+            <div class="input-group">
+                <input type="text" id="new-option" placeholder="Enter option name (e.g., Pizza)">
+                <button id="add-option-btn">Add Option</button>
+            </div>
+            <p id="admin-feedback" class="feedback"></p>
+        </section>
+
+        <section id="voter-section" class="voting-container">
+            <h3>Cast Your Vote</h3>
+            <div class="input-group">
+                <input type="text" id="voter-id" placeholder="Enter your User ID">
+            </div>
+            <div id="options-list"></div>
+            <p id="vote-feedback" class="feedback"></p>
+        </section>
+
+        <section id="results-section" class="voting-container">
+            <h3>Current Standings</h3>
+            <div id="results-display" class="results-box">No votes yet.</div>
+        </section>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/voting.js"></script>
+</body>
+</html>
